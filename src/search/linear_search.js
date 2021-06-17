@@ -2,7 +2,7 @@
  * 
  * @param {any} arr входящий массив элеметов
  * @param {any} elem Искомый элемент
- * @readonly {bool} 
+ * @returns {boolean} 
  */
 
 function linearSearch(arr, elem){
