@@ -128,14 +128,14 @@ Object.defineProperty(Stack.prototype,
 );
 /**
  * Преобразование в приметив:
- * string - Вызывает функцию printStack();
+ * string - [Object Stack];
  * number - undefined,
  * default - undefined.
  * @param {any} hint 
  * @returns 
  */
 Stack.prototype[Symbol.toPrimitive] = function (hint) {
-    return hint === "string" ? this.printStack() : undefined;
+    return hint === "string" ? "[Object Stack]" : undefined;
 };
 
 export {

@@ -21,4 +21,4 @@ import {
 let s = new Stack()
 
 
-console.log(s)
+console.log(Stack.prototype)
