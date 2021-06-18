@@ -28,7 +28,27 @@ function createsArray(min, max) {
     return array;
 }
 
+/**
+ * Функция возвращает объект с флагами:
+ * writable: true,
+ * enumerable: false,
+ * configurable: false,
+ * value: (Пользовательская функция)
+ * 
+ * @param {Function} func 
+ * @returns {Object}
+ */
+function setDescriptors(obj, valueName ,writable, enumerable, configurable, value) {
+    Object.defineProperty(obj, valueName, {
+        writable,
+        enumerable,
+        configurable,
+        value,
+    })
+}
+
 export {
     randomInteger,
-    createsArray
+    createsArray,
+    setDescriptors
 }
