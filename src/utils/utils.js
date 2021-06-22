@@ -29,16 +29,20 @@ function createsArray(min, max) {
 }
 
 /**
- * Функция возвращает объект с флагами:
- * writable: true,
- * enumerable: false,
- * configurable: false,
- * value: (Пользовательская функция)
- * 
- * @param {Function} func 
- * @returns {Object}
+ * Функция добовляет свойство или сетод в obj.prototype
+ * с установленными дескрипторами:
+ * writable,
+ * enumerable,
+ * configurable,
+ * value,
+ * @param {Object} - Объект куда будет записано свойство или метод
+ * @param {String} - Имя свойства или метода.
+ * @param {boolean} - Флаг для Writeble
+ * @param {boolean} - Флаг для enumerable
+ * @param {boolean} - Флаг для configurable
+ * @param {any} - знчаение свойства или исполняемая функция для метода
  */
-function setDescriptors(obj, valueName ,writable, enumerable, configurable, value) {
+function setDescriptors(obj, valueName, writable, enumerable, configurable, value) {
     Object.defineProperty(obj, valueName, {
         writable,
         enumerable,

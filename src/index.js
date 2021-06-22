@@ -17,8 +17,12 @@ import {
 import {
     Stack
 } from './data_structures/stack.js';
+import {insertionSort} from './sorting_algorithms/insertion_sort';
 
-let s = new Stack()
 
+let arr = createsArray(1, 10000);
 
-console.log(Stack.prototype)
+arr = fisherYatesShuffle(arr);
+let start = Date.now();
+insertionSort(arr)
+console.log((Date.now() - start) / 1000 + " s");
