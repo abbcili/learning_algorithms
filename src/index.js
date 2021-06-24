@@ -1,5 +1,6 @@
 import {
-    createsArray
+    createsArray,
+    stopwatch
 } from './utils/utils';
 
 import {
@@ -19,10 +20,19 @@ import {
 } from './data_structures/stack.js';
 import {insertionSort} from './sorting_algorithms/insertion_sort';
 
+import { selectionSort } from './sorting_algorithms/selection_sort';
 
-let arr = createsArray(1, 10000);
+import {merge, mergeSort} from './sorting_algorithms/merge_sort';
 
-arr = fisherYatesShuffle(arr);
-let start = Date.now();
-insertionSort(arr)
-console.log((Date.now() - start) / 1000 + " s");
+
+let array = createsArray(1, 10);
+
+fisherYatesShuffle(array);
+let array2 = array.slice();
+
+stopwatch(mergeSort)(array, 0, array.length);
+stopwatch(insertionSort)(array2)
+
+
+
+

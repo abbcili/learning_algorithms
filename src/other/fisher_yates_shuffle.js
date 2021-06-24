@@ -10,8 +10,6 @@ function fisherYatesShuffle(array) {
 
         [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
     }
-
-    return array;
 }
 
 export {
