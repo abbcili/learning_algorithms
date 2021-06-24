@@ -29,13 +29,13 @@ function merge(A, start, mid, end) {
  * @param {Number} arrayLength количество элементов массива(длинна)
  */
 function mergeSort(array, firstIndex, arrayLength) {
-    if (arrayLength - firstIndex <= 1) {
-        return;
+    if (firstIndex + 1 < arrayLength) {
+        let middle = Math.floor((arrayLength + firstIndex) / 2);
+        mergeSort(array, firstIndex, middle);
+        mergeSort(array, middle, arrayLength);
+        merge(array, firstIndex, middle, arrayLength);
     }
-    let middle = Math.floor((arrayLength + firstIndex) / 2);
-    mergeSort(array, firstIndex, middle);
-    mergeSort(array, middle, arrayLength);
-    merge(array, firstIndex, middle, arrayLength);
+    return;
 }
 
 export {

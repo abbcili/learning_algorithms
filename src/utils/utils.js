@@ -61,7 +61,7 @@ function setDescriptors(obj, valueName, writable, enumerable, configurable, valu
 function stopwatch(func, ...args) {
     return function (...rest) {
         const start = new Date().getTime();
-        func(...args.concat(rest))
+        func(...args.concat(rest));
         const end = new Date().getTime();
 
         return console.log(`Функция ${func.name} выполнялась ${end - start} ms`);

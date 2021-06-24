@@ -25,13 +25,16 @@ import { selectionSort } from './sorting_algorithms/selection_sort';
 import {merge, mergeSort} from './sorting_algorithms/merge_sort';
 
 
-let array = createsArray(1, 10);
+let array = createsArray(1, 4);
 
 fisherYatesShuffle(array);
-let array2 = array.slice();
 
-stopwatch(mergeSort)(array, 0, array.length);
-stopwatch(insertionSort)(array2)
+
+mergeSort(array, 0, array.length);
+
+
+
+
 
 
 
