@@ -11,12 +11,12 @@
 1. [Стек](https://github.com/abbcili/learning_algorithms/blob/main/src/data_structures/stack.js)
 ---
 ### Сортировки
-1. [Бинарный поиск](https://github.com/abbcili/learning_algorithms/blob/main/src/search/binary_search.js)
-2. [Линейный поиск](https://github.com/abbcili/learning_algorithms/blob/main/src/search/linear_search.js)
+1. [Сортировка вставками](https://github.com/abbcili/learning_algorithms/blob/main/src/sorting_algorithms/insertion_sort.js)
 ---
 
 ### Поиск
-
+1. [Бинарный поиск](https://github.com/abbcili/learning_algorithms/blob/main/src/search/binary_search.js)
+2. [Линейный поиск](https://github.com/abbcili/learning_algorithms/blob/main/src/search/linear_search.js)
 ---
 
 ### Другое
