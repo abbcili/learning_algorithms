@@ -22,9 +22,9 @@ ______________
 ______________
 3. Поиск
     * Бинарный поиск | [`Info`](https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B8%D1%81%D0%BA)
-        *[Бинарный поиск](https://github.com/abbcili/learning_algorithms/blob/main/src/search/binary_search.js)
+        * [Бинарный поиск](https://github.com/abbcili/learning_algorithms/blob/main/src/search/binary_search.js)
     * Линейный поиск | [`Info`](https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B8%D1%81%D0%BA)
-        *[Линейный поиск](https://github.com/abbcili/learning_algorithms/blob/main/src/search/linear_search.js)
+        * [Линейный поиск](https://github.com/abbcili/learning_algorithms/blob/main/src/search/linear_search.js)
 ______________
 
 4. Другое

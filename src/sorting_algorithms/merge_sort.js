@@ -10,7 +10,6 @@ function merge(A, start, mid, end) {
     for (let j = 0; j < n2; j++) {
         R.push(A[mid + j]);
     }
-
     L.push(Infinity);
     R.push(Infinity);
 
@@ -19,7 +18,7 @@ function merge(A, start, mid, end) {
 
     for (let k = start; k < end; k++) {
         L[i] < R[j] ?
-            A[k] = L[i++] : A[k] = R[j++];
+        A[k] = L[i++]: A[k] = R[j++];
     }
 }
 /**
@@ -35,7 +34,6 @@ function mergeSort(array, firstIndex, arrayLength) {
         mergeSort(array, middle, arrayLength);
         merge(array, firstIndex, middle, arrayLength);
     }
-    return;
 }
 
 export {

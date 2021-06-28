@@ -22,20 +22,18 @@ import {insertionSort} from './sorting_algorithms/insertion_sort';
 
 import { selectionSort } from './sorting_algorithms/selection_sort';
 
-import {merge, mergeSort} from './sorting_algorithms/merge_sort';
-
-
-let array = createsArray(1, 4);
-
-fisherYatesShuffle(array);
-
-
-mergeSort(array, 0, array.length);
+import {mergeSort} from './sorting_algorithms/merge_sort';
+import {searchForTwoNumbers} from './tasks/number_1';
+import {bubbleSort} from './sorting_algorithms/bubblesort';
+import {inversionCount, merge} from './other/inversion_count'
 
 
 
+let arr = createsArray(1, 120);
+fisherYatesShuffle(arr);
+let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 3, 4, 3];
 
-
-
-
+console.log(arr1)
+console.log(inversionCount(arr1))
+console.log(arr1)
 
