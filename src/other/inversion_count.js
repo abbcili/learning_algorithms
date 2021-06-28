@@ -1,3 +1,8 @@
+/**
+ * Возвращает количество инверсий в массиве
+ * @param {*} array 
+ * @returns {number} 
+ */
 function inversionCount(array) {
 
     let copy = array.slice();
@@ -23,11 +28,11 @@ function mergeInv(A, start, mid, end) {
         }
     }
 
-    while(i < L.length){
-        A[k++] = L[i++]; 
+    while (i < L.length) {
+        A[k++] = L[i++];
     }
-    while(j < R.length){
-        A[k++] = R[j++]; 
+    while (j < R.length) {
+        A[k++] = R[j++];
     }
     return count;
 }
@@ -43,4 +48,6 @@ function mergeSortInv(array, firstIndex, arrayLength) {
     return result;
 }
 
-export {inversionCount};
+export {
+    inversionCount
+};
